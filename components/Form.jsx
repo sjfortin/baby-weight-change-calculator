@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import calculateWeightDiff from "../utils/calculateWeightDiff";
 
 export default function Form() {
   const [percentageChange, setPercentageChange] = useState(null);
@@ -14,8 +15,8 @@ export default function Form() {
     const { birthLbs, birthOzs, currentLbs, currentOzs } = data;
     const birthWeight = birthLbs * 16 + parseInt(birthOzs);
     const currentWeight = currentLbs * 16 + parseInt(currentOzs);
-    const percentageDiff = (currentWeight / birthWeight) * 100;
-    setPercentageChange(percentageDiff.toFixed(2));
+
+    setPercentageChange(calculateWeightDiff(birthWeight, currentWeight));
   };
 
   return (
@@ -178,7 +179,7 @@ export default function Form() {
             <div className="text-white text-sm uppercase">
               Percentage Change
             </div>
-            <div className="text-white text-3xl mt-1">{percentageChange}</div>
+            <div className="text-white text-3xl mt-1">{percentageChange}%</div>
           </div>
         )}
       </div>
