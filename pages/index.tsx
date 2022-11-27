@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Form from "../components/Form";
 
 export default function Home() {
   return (
@@ -42,68 +43,11 @@ export default function Home() {
                     <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
                       Baby Weight Calculator
                     </h2>
-                    <p className="mx-auto mt-6 max-w-2xl text-lg text-indigo-200">
+                    {/* <p className="mx-auto mt-6 max-w-2xl text-lg text-indigo-200">
                       Add instructional text here
-                    </p>
+                    </p> */}
                   </div>
-                  <form action="#" className="mt-8 sm:mx-auto sm:max-w-lg">
-                    <div className="flex">
-                      <div className="min-w-0 flex-1">
-                        <label htmlFor="cta-email" className="sr-only">
-                          Initial Baby Weight
-                        </label>
-                        <input
-                          id="cta-email"
-                          type="email"
-                          className="block w-full rounded-md border border-transparent px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-transparent focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600"
-                          placeholder="Initial Baby Weight"
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 ml-2">
-                        <label htmlFor="cta-email" className="sr-only">
-                          Initial Baby Weight
-                        </label>
-                        <input
-                          id="cta-email"
-                          type="email"
-                          className="block w-full rounded-md border border-transparent px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-transparent focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600"
-                          placeholder="Initial Baby Weight"
-                        />
-                      </div>
-                    </div>
-                    <div className="flex mt-4">
-                      <div className="min-w-0 flex-1">
-                        <label htmlFor="cta-email" className="sr-only">
-                          Initial Baby Weight
-                        </label>
-                        <input
-                          id="cta-email"
-                          type="email"
-                          className="block w-full rounded-md border border-transparent px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-transparent focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600"
-                          placeholder="Initial Baby Weight"
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 ml-2">
-                        <label htmlFor="cta-email" className="sr-only">
-                          Initial Baby Weight
-                        </label>
-                        <input
-                          id="cta-email"
-                          type="email"
-                          className="block w-full rounded-md border border-transparent px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-transparent focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600"
-                          placeholder="Initial Baby Weight"
-                        />
-                      </div>
-                    </div>
-                    <div className="mt-4">
-                      <button
-                        type="submit"
-                        className="block w-full rounded-md border border-transparent bg-indigo-500 px-5 py-3 text-base font-medium text-white shadow hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600 sm:px-10"
-                      >
-                        Get the results
-                      </button>
-                    </div>
-                  </form>
+                  <Form />
                 </div>
               </div>
             </div>
