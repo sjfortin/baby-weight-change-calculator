@@ -11,10 +11,10 @@ export default function Home() {
       </Head>
 
       <main>
-        <div className="bg-white py-16 sm:py-24">
-          <div className="relative sm:py-16">
-            <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-              <div className="relative overflow-hidden rounded-2xl bg-indigo-600 px-6 py-10 shadow-xl sm:px-4 sm:py-20">
+        <div className="bg-white">
+          <div className="relative">
+            <div className="w-full h-screen">
+              <div className="relative overflow-hidden bg-indigo-700 px-6 py-10 shadow-xl sm:px-4 sm:py-20 h-screen">
                 <div
                   aria-hidden="true"
                   className="absolute inset-0 -mt-72 sm:-mt-32 md:mt-0"
