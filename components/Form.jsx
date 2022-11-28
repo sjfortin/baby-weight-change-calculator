@@ -29,7 +29,7 @@ export default function Form() {
         <div className="text-white text-sm uppercase font-bold tracking-wider mb-1">
           Birth Weight
         </div>
-        <div className="grid grid-cols-1 gap-2">
+        <div className="grid grid-cols-2 gap-2">
           <div>
             <label
               htmlFor="birth-lbs"
@@ -96,7 +96,7 @@ export default function Form() {
         <div className="text-white text-sm uppercase font-bold tracking-wider mb-1 mt-6">
           Current Weight
         </div>
-        <div className="grid grid-cols-1 gap-2">
+        <div className="grid grid-cols-2 gap-2">
           <div>
             <label
               htmlFor="current-lbs"
