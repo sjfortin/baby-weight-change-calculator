@@ -39,10 +39,10 @@ export default function Home() {
                   </svg>
                 </div>
                 <div className="relative">
-                  <div className="sm:text-center">
-                    <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                  <div>
+                    <h1 className="text-4xl text-center font-bold text-white">
                       Baby Weight Calculator
-                    </h2>
+                    </h1>
                     {/* <p className="mx-auto mt-6 max-w-2xl text-lg text-indigo-200">
                       Add instructional text here
                     </p> */}
